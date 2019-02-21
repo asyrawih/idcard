@@ -14,7 +14,7 @@ include "prosescetak.php";
 </head>
 
 <body>
-    <h3 class="text-center mt-5">CETAK KARTU</h3>
+    <h3 class="text-center mt-4 ">CETAK KARTU</h3>
     <div class="row mt-5 mr-3 ml-3">
         <div class="col-sm-4">
             <div class="card">
