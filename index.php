@@ -1,6 +1,4 @@
-<?php
-include "proses.php";
-?>
+<?php include "proses.php"?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,7 +7,6 @@ include "proses.php";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../assets/css/bootstrap.css">
-
     <title>ID CARD GENERATE</title>
 </head>
 
@@ -18,7 +15,7 @@ include "proses.php";
     <h1 class="text-center mt-5">Registrasi Anggota</h1>
     <hr />
     <!-- FORM INPUT -->
-    <div class="container">
+    <div class=" container">
         <div class="row">
             <div class="col-8 mt-2">
                 <form action="" method="post">
@@ -46,6 +43,8 @@ include "proses.php";
             <div class="col-4">
                 <div class="card mt-5" style="width: 20rem; height: 5rem; ">
                     <img class="card-img-top" src="./assets/img/1.jpeg" alt="Card image cap">
+                    <a href="cetakcard.php" class="btn btn-warning m-1">Cetak Depan</a>
+                    <a href="cetakbelakang.php" class="btn btn-warning">Cetak Belakang</a>
                 </div>
             </div>
         </div>

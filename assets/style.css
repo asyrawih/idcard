@@ -1,4 +1,25 @@
-.cardku {
-  background-image: url(../assets/img/1.jpeg);
-  background-size: 1011px;
+.cetakdepan {
+  float: left;
+  width: 360px;
+  height: 230px;
+  margin: 5px;
+  background-image: url('./img/1.jpeg');
+  background-repeat: no-repeat;
+  background-size: 360px 230px;
+  -webkit-print-color-adjust: exact;
+}
+
+.cetakbelakang {
+  float: left;
+  width: 360px;
+  height: 230px;
+  margin: 5px;
+  background-image: url('./img/2.jpeg');
+  background-repeat: no-repeat;
+  background-size: 360px 230px;
+  -webkit-print-color-adjust: exact;
+}
+
+.barcode {
+  margin: 10px;
 }

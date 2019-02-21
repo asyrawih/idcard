@@ -31,9 +31,40 @@ $query = mysqli_query($con, $sql);
     <div class="row mt-3 mr-3 ml-3">
         <?php while ($data = mysqli_fetch_assoc($query)): ?>
         <div class="col-sm-4 mb-1">
-            <div class="card" id="card">
-                <div class="cetakdepan">
+            <div class="card">
+                <div class="cetakbelakang">
+                    <table style="margin-top:48px;
+                     margin-left:20px;
+                     font-size:12px;
 
+                    ">
+                        <tr>
+                            <td>
+                                <?=$barcode->getBarcode($data['nik'], $barcode::TYPE_CODE_128, 2, 12)?>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><b>NAMA :</b>
+                                <?=$data['nama'];?>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><b>NIK :</b>
+
+                                <?=$data['nik'];?>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><b>NO KK :</b>
+                                <?=$data['nokk'];?>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><b>ALAMAT :</b>
+                                <?=$data['alamat'];?>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
             </div>
         </div>
