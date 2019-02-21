@@ -1,25 +1,21 @@
 .cetakdepan {
-  float: left;
+  float: right;
   width: 360px;
   height: 230px;
-  margin: 5px;
+  margin-right: 1rem;
   background-image: url('./img/1.jpeg');
   background-repeat: no-repeat;
-  background-size: 360px 230px;
+  background-size: 372px 230px;
   -webkit-print-color-adjust: exact;
 }
 
 .cetakbelakang {
-  float: left;
+  float: right;
   width: 360px;
   height: 230px;
-  margin: 5px;
+  margin-right: 1rem;
   background-image: url('./img/2.jpeg');
   background-repeat: no-repeat;
   background-size: 360px 230px;
   -webkit-print-color-adjust: exact;
-}
-
-.barcode {
-  margin: 10px;
 }

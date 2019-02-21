@@ -30,7 +30,7 @@ $query = mysqli_query($con, $sql);
     <h3 class="text-center">CETAK KARTU</h3>
     <div class="row mt-3 mr-3 ml-3">
         <?php while ($data = mysqli_fetch_assoc($query)): ?>
-        <div class="col-sm-4 mb-1">
+        <div class="col-sm-6 mb-1">
             <div class="card" id="card">
                 <div class="cetakdepan">
 

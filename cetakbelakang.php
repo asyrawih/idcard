@@ -10,7 +10,7 @@ include "proses.php";
 $barcode = new BarcodeGeneratorSVG();
 
 // query data
-$sql = "SELECT * FROM tcard LIMIT 12     ";
+$sql = "SELECT * FROM tcard LIMIT 12";
 $query = mysqli_query($con, $sql);
 
 ?>
@@ -30,11 +30,11 @@ $query = mysqli_query($con, $sql);
     <h3 class="text-center">CETAK KARTU</h3>
     <div class="row mt-3 mr-3 ml-3">
         <?php while ($data = mysqli_fetch_assoc($query)): ?>
-        <div class="col-sm-4 mb-1">
+        <div class="col-sm-6 mb-1">
             <div class="card">
                 <div class="cetakbelakang">
                     <table style="margin-top:48px;
-                     margin-left:20px;
+                     margin-left:40px;
                      font-size:12px;
 
                     ">

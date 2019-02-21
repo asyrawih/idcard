@@ -1,4 +1,10 @@
-<?php include "proses.php"?>
+<?php include "proses.php";
+
+$result = mysqli_query($con, 'SELECT * FROM tcard');
+
+$hitung = mysqli_num_rows($result);
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -42,6 +48,9 @@
             </div>
             <div class="col-4">
                 <div class="card mt-5" style="width: 20rem; height: 5rem; ">
+                    <h5 class="text-center" id="hitung"><?=$hitung;?></h5>
+                    <small class="text-center">Yang telah terdaftar</small>
+                    <h5 class="text-center">Jumlah Anggota</h5>
                     <img class="card-img-top" src="./assets/img/1.jpeg" alt="Card image cap">
                     <a href="cetakcard.php" class="btn btn-warning m-1">Cetak Depan</a>
                     <a href="cetakbelakang.php" class="btn btn-warning">Cetak Belakang</a>
@@ -55,5 +64,6 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
 
 </body>
+
 
 </html>
