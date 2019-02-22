@@ -45,23 +45,23 @@ $query = mysqli_query($con, $sql);
                         </tr>
                         <tr>
                             <td><b>NAMA :</b>
-                                <?=$data['nama'];?>
+                                <?=strtoupper($data['nama']);?>
                             </td>
                         </tr>
                         <tr>
                             <td><b>NIK :</b>
 
-                                <?=$data['nik'];?>
+                                <?=strtoupper($data['nik']);?>
                             </td>
                         </tr>
                         <tr>
                             <td><b>NO KK :</b>
-                                <?=$data['nokk'];?>
+                                <?=strtoupper($data['nokk']);?>
                             </td>
                         </tr>
                         <tr>
                             <td><b>ALAMAT :</b>
-                                <?=$data['alamat'];?>
+                                <?=strtoupper($data['alamat']);?>
                             </td>
                         </tr>
                     </table>
