@@ -26,3 +26,21 @@ if (isset($_POST['submit'])) {
 
     }
 }
+
+if (isset($_POST['btn-edit'])) {
+
+    $id = $_POST['id'];
+    $nama = $_POST['nama'];
+    $nik = $_POST['nik'];
+    $nokk = $_POST['nokk'];
+    $alamat = $_POST['alamat'];
+
+    $sqlupdate = "UPDATE tcard SET nama='$nama' , nik = '$nik' , nokk='$nokk' , alamat='$alamat' WHERE id = '$id'";
+    $query = mysqli_query($con, $sqlupdate);
+
+    if ($query) {
+
+        header('Location:index.php?status=berhasil');
+
+    }
+}

@@ -1,9 +1,7 @@
 <?php
 
 include "proses.php";
-
 $sql = "SELECT * FROM tcard";
-
 $query = mysqli_query($con, $sql);
 
 ?>
@@ -40,14 +38,24 @@ $query = mysqli_query($con, $sql);
                     <?php $no = 1;?>
                     <?php while ($res = mysqli_fetch_assoc($query)): ?>
                     <tr>
-                        <th scope="row"><?=$no++?></th>
-                        <td><?=$res['nama']?></td>
-                        <td><?=$res['nik']?></td>
-                        <td><?=$res['nokk']?></td>
-                        <td><?=$res['alamat']?></td>
+                        <th scope="row">
+                            <?=$no++?>
+                        </th>
                         <td>
-                            <a href="listanggota.php?edit=<?=$res['id'];?>" class=" btn btn-warning btn-small">EDIT</a>
-                            <a href="" class=" btn btn-danger btn-small">HAPUS</a>
+                            <?=$res['nama']?>
+                        </td>
+                        <td>
+                            <?=$res['nik']?>
+                        </td>
+                        <td>
+                            <?=$res['nokk']?>
+                        </td>
+                        <td>
+                            <?=$res['alamat']?>
+                        </td>
+                        <td>
+                            <a href="edit.php?id=<?=$res['id'];?>" class=" btn btn-warning btn-small">EDIT</a>
+                            <a href="hapus.php?id=<?=$res['id'];?>" class=" btn btn-danger btn-small"             type="submit" name="hapus">HAPUS</a>
                         </td>
 
                     </tr>
