@@ -1,6 +1,11 @@
 <?php
 
-$con = mysqli_connect("localhost", "root", "", "card");
+$host = "localhost"; 
+$username = "root"; 
+$pass = ""; 
+$dbname = "card"; 
+
+$con = mysqli_connect($host, $username, $pass, $dbname);
 
 if (isset($_POST['submit'])) {
 
