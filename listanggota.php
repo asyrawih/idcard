@@ -46,7 +46,7 @@ $query = mysqli_query($con, $sql);
                         <td><?=$res['nokk']?></td>
                         <td><?=$res['alamat']?></td>
                         <td>
-                            <a href="" class=" btn btn-warning btn-small">EDIT</a>
+                            <a href="listanggota.php?edit=<?=$res['id'];?>" class=" btn btn-warning btn-small">EDIT</a>
                             <a href="" class=" btn btn-danger btn-small">HAPUS</a>
                         </td>
 
